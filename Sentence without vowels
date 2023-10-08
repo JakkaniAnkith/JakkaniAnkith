@@ -1,0 +1,10 @@
+s=input()
+a=['A','E','I','O','U','a','e','i','o','u']
+i=len(s)-1
+while(i>=0):
+    if(s[i] in a):
+        s=s[:-1]
+    elif (s[i] not in a):
+        break
+    i-=1
+print(s)
