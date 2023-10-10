@@ -1,0 +1,10 @@
+class Solution:
+    def isSubSequence(self, A, B):
+        #code here
+        a=0
+        for i in range(len(B)):
+            if(A[a]==B[i]):
+                a+=1
+            if(a==len(A)):
+                return True
+        return False
